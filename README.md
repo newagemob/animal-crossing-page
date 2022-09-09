@@ -7,7 +7,8 @@ This page accesses the [ACNH API](https://acnhapi.com/), provding animal and pla
 # Get Started
 
   * Open `index.html` in your browser
-    ➡️ `cd ${animal-crossing-page} && open index.html`
+  
+  ➡️ `cd animal-crossing-page && open index.html`
     
 # Editing The Project
 
