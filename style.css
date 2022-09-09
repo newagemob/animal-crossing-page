@@ -1,0 +1,65 @@
+/* root */
+:root {
+  --color-primary: #e25b1d;
+  --color-secondary: rgb(0, 151, 0);
+  --color-tertiary: #00f;
+}
+
+.title-bar {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 2rem;
+    margin: 2rem 4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/* animal data will be a card with a title, image, and description */
+/* put animal-data in a flexible grid with a max width of 5rem */
+#animal-data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1rem;
+    margin: 2rem 4rem;
+}
+
+#animal-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 4rem;
+  margin: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#animal-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#animal-image {
+  width: 100%;
+  height: auto;
+}
+
+#animal-description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* animal-rarity will be a badge with a background color and text */
+#animal-rarity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}

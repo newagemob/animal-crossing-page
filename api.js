@@ -27,11 +27,11 @@ const callAnimalCrossingAPI = (animalType, animalName) => {
       animalData.appendChild(animalName);
       animalData.appendChild(animalImage);
       animalData.appendChild(animalDescription)
-      if (data.availability.rarity !== 'undefined') {
+      if (await data.availability.rarity) {
         animalData.appendChild(animalRarity);
       }
 
-      document.body.appendChild(animalData);
+      document.getElementById('animal-data-container').appendChild(animalData);
     }
   }
 
